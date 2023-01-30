@@ -19,3 +19,8 @@ terraform {
 provider "azurerm" {
   features {}
 }
+
+module "infrastructure" {
+source = "./modules/infrastructure"
+  
+}
