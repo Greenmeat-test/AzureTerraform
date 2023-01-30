@@ -22,5 +22,8 @@ provider "azurerm" {
 
 module "infrastructure" {
 source = "./modules/infrastructure"
+
+environment = var.environment
+nsg_rules   =  var.nsg_rules
   
 }
